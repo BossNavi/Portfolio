@@ -12,13 +12,15 @@
     <section id="header">
         <div class="container">
             <nav>
-                <img src="/Images/logo.png" class="logo">
+                {{!-- <img src="/Images/nave-logo.png" class="logo"> --}}
+                <div class="logo">
+                    <h1>NA<span>VE</span></h1>
+                </div>
                 <ul id="side-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#project">Project</a></li>
                     <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openMenu()"></i>
@@ -26,7 +28,9 @@
             <div class="header-text">
                 <p>Hi there,</p>
                 <h1>I'm <span>Ivan Chris</span> Cano<br>from Albay</h1>
-                <p>a <strong>Web Devoloper.</strong></p>
+                <p>a <strong>Web Developer.</strong></p>
+                <br>
+                <a href="/Images/cv.pdf" class="cv-btn" download >DOWNLOAD RESUME</a>
             </div>
         </div>
     </section>
@@ -39,7 +43,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis illum corrupti nobis animi quod dolorem sunt temporibus, hic voluptate autem minus necessitatibus ad, placeat laboriosam </p>
+                    <p>I'm <span>Ivan Chris Cano</span>, 25 years old, finished a bachelor's degree in Information Technology at the Polytechnic Institute of Tabaco. </p>
+                    <p>My curiosity about technology pushed me to choose Information Technology. I have learned different programming languages such as C, C++, PHP, HTML, CSS, Javascript, Node Js, Express Js and MySQL for Web Development.</p>
+                    <p>My goal is, to work with people who develop and innovate web applications that could help other people in their daily lives. As an aspiring full-stack web developer, I never stop practicing my skills and widening my knowledge by learning different programming languages because technology never stops growing.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link " onclick="openTab('skills')">Skills</p>
@@ -56,12 +62,12 @@
                             <li>
                                 <span>Web Development</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Web App Development
                             </li>
                             <li>
-                                <span>App Development</span>
+                                <span>Git</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Have a basic knowledge and understanding to use Git. 
                             </li>
                         </ul>
                     </div>
@@ -69,19 +75,19 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li>
-                                <span>Content 2</span>
+                                <span>2017</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nemo?
                             </li>
                             <li>
-                                <span>Web Development</span>
+                                <span>2021 - 2022</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Accounting staff at LGU Malinao Albay
                             </li>
                             <li>
-                                <span>App Development</span>
+                                <span>2022</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Freelancing (Web Developer)
                             </li>
                         </ul>
                     </div>
@@ -89,19 +95,25 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li>
-                                <span>content3</span>
+                                <span>2004 - 2010</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Baybay Elementary School
                             </li>
                             <li>
-                                <span>Web Development</span>
+                                <span>2010 - 2014</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Malinao National High School
                             </li>
                             <li>
-                                <span>App Development</span>
+                                <span>2014 - 2015</span>
                                 <br>
-                                Designing Web App Interfaces
+                                Global Institute - Naga Albay
+                            </li>
+                            <li>
+                                <span>2017 - 2022</span>
+                                <br>
+                                Polytechnic Institute of Tabaco <br>
+                                Bachelor in Science of  Information Technology (BSIT)
                             </li>
                         </ul>
                     </div>
@@ -118,38 +130,40 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore sunt ducimus itaque iste ab illum autem repellat a excepturi. Autem a ipsa alias voluptas esse ab, consectetur reprehenderit facilis!</p>
+                    <h2>Web Designing</h2>
+                    <p>I can do static modern website designs using HTML, CSS and Javascript</p>
                     <a href="">learn more</a>
                 </div>
 
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>UI Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore sunt ducimus itaque iste ab illum autem repellat a excepturi. Autem a ipsa alias voluptas esse ab, consectetur reprehenderit facilis!</p>
+                    <h2>Back End Programming</h2>
+                    <p>I can do web pages dynamically by using PHP or Node Js and Express.</p>
                     <a href="">learn more</a>
                 </div>
 
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore sunt ducimus itaque iste ab illum autem repellat a excepturi. Autem a ipsa alias voluptas esse ab, consectetur reprehenderit facilis!</p>
+                    <h2>Database Management</h2>
+                    <p>I can do database management using two different methods, SQL and NoSQL. For SQL, I am using MySQL, on the other hand, I use MongoDB for NoSQL.</p>
                     <a href="">learn more</a>
                 </div>
+
+                
             </div>
         </div>
     </section>
 
     {{!--------------------------- PORTFOLIO --}}
-    <section id="portfolio">
+    <section id="project">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">My Project</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="/Images/work-1.png" >
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error reiciendis adipisci asperiores quisquam saepe </p>
+                        <h3>LOCATER</h3>
+                        <p>Online Catering Reservation System</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
@@ -158,61 +172,59 @@
                  <div class="work">
                     <img src="/Images/work-2.png" >
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error reiciendis adipisci asperiores quisquam saepe </p>
+                        <h3>Portfolio</h3>
+                        <p>My Portfolio</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
-                 <div class="work">
+                <div class="work">
                     <img src="/Images/work-3.png" >
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error reiciendis adipisci asperiores quisquam saepe </p>
+                        <h3>Student Management System</h3>
+                        <p>build for my Sister</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
                 </div>
+                
             </div>
                 <a href="#" class="btn">See more</a>
         </div>
     </section>
 
-    {{!---------------------- CONTACT --}}
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-tittle">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> ivanchriscano@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 09701167623</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="/Images/my-cv..pdf" download class="btn btn2">DOWNLOAD CV</a>
-                </div>
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your e-mail" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
     {{!-- COPYRIGHT --}}
 
     <section id="copyright">
-        <p>Copyright &copy 2022, made by Ivan Chris Cano</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/BossNavi"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Copyright <span>&copy</span> 2022, made by <span>Ivan Chris Cano</span></p>
     </section>
+
+
+    <div class="message">
+        <div class="write-msg">
+            <center>
+                <h3 style="margin: 10px;">Message Me</h3>
+            </center>
+            <form action="" class="form-msg">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea name="" rows="3" placeholder="Your Message"></textarea>
+                <button>SEND</button>
+            </form>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </div>
+    </div>
     <script src="/script.js"></script>
 </body>
 </html>
